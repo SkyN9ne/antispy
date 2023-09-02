@@ -21,7 +21,7 @@ With its assistance,you can easily spot and neutralize malwares hidden from norm
 
 ## Code Structure
 
-```shell
+```
 AntiSpy_Root_Dir
 ├── LICENSE
 ├── README.md
@@ -56,8 +56,8 @@ Currently,the following features are available(including but not limited to):
 * Terminate, suspend and resume processes and threads.
 * View and manipulate process handles,windows and memory regions.
 * View and manipulate process hotkeys,privileges,and timers.
-* Detect and restore process hooks incluing inline hooks,patches,iat and eat hooks.
-* Inject dll,dump process memory.
+* Detect and restore process hooks incluing inline hooks,patches, IAT (Import Address Table) and EAT (Export Address Table) hooks.
+* Inject a ```*.dll``` ,dump process memory.
 * Create debug dump,include mini dump and full dump.
 
 ### Kernel Module Viewer
@@ -70,18 +70,18 @@ Currently,the following features are available(including but not limited to):
 
 ### Hook Detector
 
-* Detect and restore SSDT,Shadow SSDT,sysenter and int2e hooks.
+* Detect and restore ```SSDT```(System Service Dispatch Table), ```Shadow SSDT```, ```sysenter``` and ```int2e``` hooks.
 * Detect and restore FSD and keyboard disptach hooks.
-* Detect and restore kernel code hooks including kernel inline hooks,patches,iat and eat hooks.
+* Detect and restore kernel code hooks including kernel inline hooks, patches, IAT and EAT hooks.
 * Detect and restore message hooks,both global and local.
-* Detect and restore kernel ObjectType hooks.
-* Display Interrupt Descriptor Table(IDT).
+* Detect and restore kernel ```ObjectType``` hooks.
+* Display Interrupt Descriptor Table (IDT).
 
 ### Other Kernel Information Viewer
 
 * View and remove kernel notifications.
 * View filters for common devices include disk,volume,keyboard and network devices. 
-* View IO timers,DPC timers,system threads,and so on.
+* View I/O timers,DPC timers,system threads,and so on.
 
 ### Registry Manager
 
@@ -107,15 +107,15 @@ Currently,the following features are available(including but not limited to):
 
 ### Network Viewer
 
-* Display current network connections,include TCP and UDP informations.
-* View and delete IE plugins and context menu.
-* Display winsock providers(LSP).
-* View and edit hosts file.
+* Display current network connections,include TCP and UDP connections.
+* View and delete IE (Internet Explorer) plugins and context menu.
+* Display ``` winsock``` providers(LSP).
+* View and edit the ```hosts``` file.
 
 ### Other Tools
 
 * Hex Editor - View and edit memory,include ring3 process memory and ring0 system memory.
-* Disassembler - Like OllyDBG,support ring3 process memory and ring0 system memory.
+* Disassembler - Like ```OllyDBG```,support ring3 process memory and ring0 system memory.
 
 ### Settings
 
